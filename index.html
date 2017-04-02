@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chess AI</title>
+        <link rel="stylesheet" type="text/css" href="./css/chessboard-0.3.0.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/layout.css">
+    </head>
+    <body>
+        <div id="board" style="width: 400px"></div>
+        <div class="info">
+            <!--Search depth:-->
+            <!--<select id="search-depth">-->
+                <!--<option value="1">1</option>-->
+                <!--<option value="2">2</option>-->
+                <!--<option value="3" selected>3</option>-->
+                <!--<option value="4">4</option>-->
+                <!--<option value="5">5</option>-->
+            <!--</select>-->
+
+            <br>
+            <span>Positions evaluated: <span id="position-count"></span></span>
+            <br>
+            <span>Time: <span id="time"></span></span>
+            <br>
+            <span>Positions/s: <span id="positions-per-s"></span> </span>
+            <br>
+            <br>
+            <div id="move-history" class="move-history">
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Board and piece constructors -->
+        <script src="./js/chess-0.10.2.min.js"></script>
+        <script src="./js/chessboard-0.3.0.min.js"></script>
+        <!-- The chess AI -->
+        <script src="./js/chess-ai.js"></script>
+    </body>
+</html>
